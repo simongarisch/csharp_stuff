@@ -16,3 +16,5 @@ dotnet run
 ```
 
 You can see the stats on most downloaded nuget packages [here](https://www.nuget.org/stats/packages).
+
+dotnet tool update - Updates the specified .NET tool on your machine.
