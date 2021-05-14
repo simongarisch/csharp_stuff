@@ -1,5 +1,7 @@
 # csharp_stuff
 
+[Downloads](https://dotnet.microsoft.com/download)
+
 Starting with MS [tour of C#](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/)
 
 We can use [dotnet new](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new) to create a new project.
