@@ -2,6 +2,8 @@
 
 [Downloads](https://dotnet.microsoft.com/download)
 
+[dotnet in Jupyter](https://devblogs.microsoft.com/dotnet/net-core-with-juypter-notebooks-is-here-preview-1/)
+
 Starting with MS [tour of C#](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/)
 
 We can use [dotnet new](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new) to create a new project.
