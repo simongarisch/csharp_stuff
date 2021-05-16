@@ -20,6 +20,7 @@ class LogDoubler : ICalculation {
     public LogDoubler(Doubler doubler) {
         this.doubler = doubler;
     }
+
     public int Calc(int input) {
         Console.WriteLine("Starting the executioin with integer " + input);
         int result = doubler.Calc(input);
