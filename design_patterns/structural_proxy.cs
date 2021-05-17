@@ -36,7 +36,6 @@ class PasswordsProxy : IPasswords {
 
 class Program {
     public static void Main() {
-        var simonsPasswords = new SimonsPasswords();
         var proxy = new PasswordsProxy("Bob");
         Console.WriteLine(proxy.GetMasterPassword()); // *******************
 
