@@ -22,5 +22,7 @@ dotnet run
 You can see the stats on most downloaded nuget packages [here](https://www.nuget.org/stats/packages).
 
 dotnet tool update - Updates the specified .NET tool on your machine.
+dotnet format
 
-https://www.guru99.com/c-sharp-access-database.html
+[C# documentation](https://docs.microsoft.com/en-us/dotnet/csharp/codedoc)
+[C# versioning](https://docs.microsoft.com/en-us/dotnet/csharp/versioning)
