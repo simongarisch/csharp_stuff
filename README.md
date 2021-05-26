@@ -25,4 +25,5 @@ dotnet tool update - Updates the specified .NET tool on your machine.
 dotnet format
 
 [C# documentation](https://docs.microsoft.com/en-us/dotnet/csharp/codedoc)
+
 [C# versioning](https://docs.microsoft.com/en-us/dotnet/csharp/versioning)
