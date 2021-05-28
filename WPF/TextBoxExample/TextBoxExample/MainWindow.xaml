@@ -1,0 +1,35 @@
+﻿<Window x:Class="TextBoxExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextBoxExample"
+        mc:Ignorable="d"
+        Title="TextBoxExample" Height="450" Width="800">
+
+    <StackPanel>
+        <!-- Just a basic TextBox-->
+        <TextBox />
+
+        <!-- We can make this multiline
+             AcceptsReturn makes the TextBox into a multi-line control by allowing the use of the Enter/Return key to go to the next line
+        -->
+        <TextBox AcceptsReturn="True" TextWrapping="Wrap">
+            This is some text...
+            And yet some more...
+            That we can put into our text box.
+        </TextBox>
+
+        <Separator/>
+
+        <!-- Adding spell check -->
+        <Label Content="Spell Checker" Background="AliceBlue"/>
+        <TextBox AcceptsReturn="True" TextWrapping="Wrap" SpellCheck.IsEnabled="True" Language="en-US" Background="AliceBlue"/>
+
+        <!-- Write and read -->
+        <TextBox SelectionChanged="TextBox_SelectionChanged" Background="Green" />
+        <TextBox Name="txtStatus" AcceptsReturn="True" TextWrapping="Wrap" IsReadOnly="True"/>
+
+    </StackPanel>
+
+</Window>

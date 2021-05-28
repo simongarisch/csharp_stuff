@@ -1,0 +1,42 @@
+﻿<Window x:Class="ButtonExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ButtonExample"
+        mc:Ignorable="d"
+        Title="ButtonExample" Height="450" Width="800">
+
+    <!-- To set padding for all child buttons -->
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Padding" Value="5,2"/>
+        </Style>
+    </Window.Resources>
+
+    <StackPanel Margin="10">
+        <Button Click="HelloWorldButton_Click">Hello, World!</Button>
+
+        <!-- We can do some formatting -->
+        <Separator/>
+        <Button Background="Beige" Foreground="Blue" FontWeight="Bold" Padding="10" Margin="15">Formatted Button</Button>
+        
+        <!-- Buttons with advanced content -->
+        <Button>
+            <StackPanel Orientation="Vertical">
+                <TextBlock>Formatted</TextBlock>
+                <TextBlock Foreground="Blue" FontWeight="Bold" Margin="2,0">Button</TextBlock>
+                <TextBlock Foreground="Gray" FontStyle="Italic">[Various]</TextBlock>
+            </StackPanel>
+        </Button>
+        
+        <!-- Buttons with images -->
+        <Button Padding="5">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="help.png"/>
+                <TextBlock>Help</TextBlock>
+            </StackPanel>
+        </Button>
+    </StackPanel>
+    
+</Window>

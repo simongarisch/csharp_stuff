@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamlBasic", "XamlBasic\XamlBasic.csproj", "{95720369-D701-44F2-9EFE-B6E0B586968B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95720369-D701-44F2-9EFE-B6E0B586968B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95720369-D701-44F2-9EFE-B6E0B586968B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95720369-D701-44F2-9EFE-B6E0B586968B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95720369-D701-44F2-9EFE-B6E0B586968B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5F4B1D6C-8CFE-40F8-9ACA-2016B846A015}
+	EndGlobalSection
+EndGlobal
