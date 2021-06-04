@@ -1,0 +1,25 @@
+﻿<Window x:Class="ImageControlExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ImageControlExample"
+        mc:Ignorable="d"
+        Title="Images" Height="450" Width="800">
+
+    <StackPanel>
+        <!-- An image from the internet -->
+        <Image Source="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" />
+        
+        <!-- Or one locally by adding resource files to your project-->
+        <Image Source="/ImageControlExample;component/Images/google.png" />
+
+        <Separator/>
+        <WrapPanel Margin="10" HorizontalAlignment="Center">
+            <Button Name="btnLoadFromFile" Margin="0,0,20,0" Click="BtnLoadFromFile_Click">Load from File...</Button>
+            <Button Name="btnLoadFromResource" Click="BtnLoadFromResource_Click">Load from Resource</Button>
+        </WrapPanel>
+        <Image Name="imgDynamic" Margin="10"  />
+    </StackPanel>
+
+</Window>
