@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModernFlatUITutorial", "ModernFlatUITutorial\ModernFlatUITutorial.csproj", "{3C9D8A16-DE4E-4A40-9E7F-FF8340A8431D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C9D8A16-DE4E-4A40-9E7F-FF8340A8431D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C9D8A16-DE4E-4A40-9E7F-FF8340A8431D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C9D8A16-DE4E-4A40-9E7F-FF8340A8431D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C9D8A16-DE4E-4A40-9E7F-FF8340A8431D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24128A23-03F1-44DB-A1B6-2A585DB7719F}
+	EndGlobalSection
+EndGlobal
