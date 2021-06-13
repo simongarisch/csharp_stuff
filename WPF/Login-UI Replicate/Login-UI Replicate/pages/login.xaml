@@ -1,0 +1,161 @@
+﻿<Page xmlns:CustomControls="clr-namespace:Login_UI_Replicate.CustomControls"
+      x:Class="Login_UI_Replicate.pages.login"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Login_UI_Replicate.pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="650"
+      Title="login">
+
+    <Page.Resources>
+
+        <Style x:Key="linkText" TargetType="{x:Type TextBlock}">
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="TextTrimming" Value="CharacterEllipsis"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="TextAlignment" Value="Left"/>
+            <Setter Property="MaxWidth" Value="135"/>
+            <Setter Property="FontSize" Value="15"/>
+        </Style>
+
+        <Style x:Key="primarybutton" TargetType="{x:Type Button}">
+            <Setter Property="MinWidth" Value="120"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Background" Value="#FF01A3FF"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border
+                            x:Name="bd"
+                            Background="{TemplateBinding Background}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="10">
+                            <ContentPresenter
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                TextBlock.Foreground="{TemplateBinding Foreground}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="bd" Property="Background" Value="#80d0FF"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </Page.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title -->
+        <TextBlock Margin="35,0"
+                   FontSize="30"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Opacity="0.75">
+            <Run Text="Smart"></Run>
+            <Run Text="Login" FontWeight="Bold"></Run>
+        </TextBlock>
+
+        <!-- 4 sections for the login -->
+        <Grid Grid.Row="1"
+              Width="450"
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <!-- Username -->
+                <RowDefinition Height="100"/>
+                <!-- Email -->
+                <RowDefinition Height="100"/>
+                <!-- Password -->
+                <RowDefinition Height="100"/>
+                <!-- Button etc. -->
+                <!-- Followed by a note -->
+            </Grid.RowDefinitions>
+
+            <!-- A welcome message for the user -->
+            <TextBlock Grid.Row="0"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       FontSize="30">
+                <Run FontWeight="SemiBold" Text="Hello, "/>
+                <Run Text="Simon!" Foreground="#FF01A3ff" FontWeight="Bold" x:Name="userName"/>
+            </TextBlock>
+
+            <TextBox Grid.Row="1"
+                     x:Name="usernameBox"
+                     Text="Username..."
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center"
+                     HorizontalContentAlignment="Center"
+                     VerticalContentAlignment="Center"
+                     Width="250"
+                     Height="40"
+                     FontSize="18"
+                     Opacity="0.75">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="0"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+
+            <PasswordBox Grid.Row="2"
+                     x:Name="passwordBox"
+                     HorizontalAlignment="Center"
+                     VerticalAlignment="Center"
+                     HorizontalContentAlignment="Center"
+                     VerticalContentAlignment="Center"
+                     Width="250"
+                     Height="40"
+                     FontSize="18"
+                     Opacity="0.75"
+                     Password="someonepass">
+            </PasswordBox>
+
+            <!-- Login details and button -->
+            <Grid Grid.Row="3"
+                  Margin="10,0,0,25"
+                  Height="60">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="125"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="125"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Last Login Name -->
+                <TextBlock Grid.Column="0"
+                           Style="{StaticResource linkText}">
+                    <Run Text="I'm not"/>
+                    <Run Text="{Binding Text, ElementName=userName}"/>
+                </TextBlock>
+
+                <!-- Forgot Password -->
+                <TextBlock Grid.Column="1"
+                           Style="{StaticResource linkText}"
+                           Text="Forgot Password?">
+                    <Hyperlink/>
+                </TextBlock>
+
+                <!-- Login Button -->
+                <Button Grid.Column="2"
+                        Content="Login"
+                        Style="{StaticResource primarybutton}"
+                        Click="Button_Click"/>
+            </Grid>
+
+        </Grid>
+    </Grid>
+</Page>
