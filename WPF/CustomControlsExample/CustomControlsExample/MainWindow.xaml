@@ -1,0 +1,21 @@
+﻿<Window x:Class="CustomControlsExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CustomControlsExample"
+        xmlns:customControls = "clr-namespace:CustomControlsExample"
+        mc:Ignorable="d"
+        Height="450" Width="800">
+    <StackPanel Orientation="Horizontal">
+        <customControls:MyUserControl/>
+
+        <StackPanel Orientation="Vertical" Margin="10" Background="Azure">
+            <customControls:CustomButton/>
+            <customControls:CustomButton/>
+            <customControls:CustomButton/>
+            <customControls:CustomButton/>
+            <customControls:CustomButton/>
+        </StackPanel>
+    </StackPanel>
+</Window>
