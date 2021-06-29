@@ -375,6 +375,60 @@ class SortedSets : IExample {
     }
 }
 
+class Tuples : IExample {
+    public void Run() {
+        Tuple<int> tuple = Tuple.Create(1);
+        Console.WriteLine(tuple); // (1)
+
+        // alternatively
+        Tuple<int> tuple1 = new Tuple<int>(1);
+        Console.WriteLine(tuple1); // (1)
+
+        var tuple2 = new Tuple<int,int>(1, 2);
+        var tuple3 = new Tuple<int,int,int>(1, 2, 3);
+        var tuple4 = new Tuple<int,int,int,int>(1, 2, 3, 4);
+        var tuple5 = new Tuple<int,int,int,int,int>(1, 2, 3, 4, 5);
+        Console.WriteLine(tuple5);
+        Console.WriteLine(tuple5.Item1 + " " + tuple5.Item2 + " ... " + tuple5.Item5); // 1 2 ... 5
+
+        // tuples are an immutable data type
+        var t = Tuple.Create(1, "hello world", true);
+        Console.WriteLine(t.Item1); // 1
+        Console.WriteLine(t.Item2); // 'hello world'
+        Console.WriteLine(t.Item3); // true
+    }
+}
+
+class LinkedLists : IExample {
+    public void Run() {
+        var linkedList = new LinkedList<string>();
+        linkedList.AddFirst("root");
+        linkedList.AddAfter(linkedList.First, "element");
+        linkedList.AddAfter(linkedList.First, "new root");
+        linkedList.AddLast("last element");
+
+        foreach(string item in linkedList) {
+            Console.Write(item + ","); // root,new root,element,last element,
+        }
+        Console.WriteLine();
+
+        Console.WriteLine(linkedList.Count);            // 4
+        Console.WriteLine(linkedList.First.Value);      // root
+        Console.WriteLine(linkedList.Last.Value);       // last element
+        Console.WriteLine(linkedList.Contains("root")); // true
+
+        LinkedListNode<string> node = linkedList.FindLast("root");
+        Console.WriteLine(node.Value);            // root
+        Console.WriteLine(node.Next.Value);       // new root
+        Console.WriteLine(node.Previous == null); // true
+
+        linkedList.Remove("element");
+        linkedList.RemoveFirst();
+        linkedList.RemoveLast();
+        linkedList.Clear();
+    }
+}
+
 class Program {
     public static void Main() {
         var examples = new List<IExample> {
@@ -388,7 +442,9 @@ class Program {
             new HashSets(),
             new SortedLists(),
             new SortedDictionaries(),
-            new SortedSets()
+            new SortedSets(),
+            new Tuples(),
+            new LinkedLists()
         };
 
         foreach(var example in examples) {
