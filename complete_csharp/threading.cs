@@ -220,5 +220,3 @@ class Program {
         }
     }
 }
-
-Program.Main();
