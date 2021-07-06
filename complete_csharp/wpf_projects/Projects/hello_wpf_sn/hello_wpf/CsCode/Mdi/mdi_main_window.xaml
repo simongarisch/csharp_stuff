@@ -1,0 +1,15 @@
+﻿<Window x:Class="hello_wpf.CsCode.Mdi.mdi_main_window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hello_wpf.CsCode.Mdi"
+        mc:Ignorable="d"
+        Title="mdi_main_window" Height="349.11" Width="489.324" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="show_window_butt" Content="Show Child Window" HorizontalAlignment="Left" Margin="160,56,0,0" VerticalAlignment="Top" Width="140" Height="33" Click="show_window_butt_Click"/>
+        <Button x:Name="show_dialog_window_butt" Content="Show Child as Dialog" HorizontalAlignment="Left" Margin="160,110,0,0" VerticalAlignment="Top" Width="140" Height="33" Click="show_dialog_window_butt_Click"  />
+        <Button x:Name="change_window_butt" Content="Change Child Window" HorizontalAlignment="Left" Margin="160,164,0,0" VerticalAlignment="Top" Width="140" Height="33" Click="change_window_butt_Click"  />
+
+    </Grid>
+</Window>

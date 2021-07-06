@@ -1,0 +1,17 @@
+﻿<Window x:Class="hello_wpf.CsCode.txt_sfd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hello_wpf.CsCode"
+        mc:Ignorable="d"
+        Title="txt_sfd" Height="413.544" Width="409.196">
+    <Grid>
+        <Button x:Name="save_butt" Content="Save in Text" HorizontalAlignment="Left" Margin="53,10,0,0" VerticalAlignment="Top" Width="75" Click="save_butt_Click"/>
+        <TextBox x:Name="txt_tbox" Margin="50,87,23,10" TextWrapping="Wrap" Text="TextBox" VerticalScrollBarVisibility="Auto" AcceptsReturn="True"/>
+        <Button x:Name="load_butt" Content="Load from Text" HorizontalAlignment="Left" Margin="137,10,0,0" VerticalAlignment="Top" Width="94" Click="load_butt_Click"  />
+        <Button x:Name="new_butt" Content="Add New (Clear)" HorizontalAlignment="Left" Margin="246,10,0,0" VerticalAlignment="Top" Width="98" Click="new_butt_Click"/>
+        <Button x:Name="save_as_butt" Content="Save As" HorizontalAlignment="Left" Margin="50,62,0,0" VerticalAlignment="Top" Width="75" Click="save_as_butt_Click"  />
+
+    </Grid>
+</Window>

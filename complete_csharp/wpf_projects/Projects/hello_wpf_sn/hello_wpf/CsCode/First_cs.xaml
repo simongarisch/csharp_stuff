@@ -1,0 +1,33 @@
+﻿<Window x:Name="First_cs_window" x:Class="hello_wpf.CsCode.First_cs"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hello_wpf.CsCode"
+        mc:Ignorable="d"
+        Title="First_cs" Height="388.879" Width="506.84" WindowStartupLocation="CenterScreen" Background="Green" 
+         >
+    <Grid x:Name="main_grid" Background="#FFFFF7E8">
+        <Grid x:Name="sub_grid" Margin="28,40,209,26" Background="#FFE3ECC4">
+            <Button x:Name="First_Butt" Content="First Button" HorizontalAlignment="Left" Margin="97,0,0,0" VerticalAlignment="Top" Width="105" Click="First_Butt_Click"/>
+            <Button x:Name="Second_Butt" Content="Second Button" HorizontalAlignment="Left" Margin="97,25,0,0" VerticalAlignment="Top" Width="105" Click="Second_Butt_Click"/>
+            <Button x:Name="Text_Butt" Content="Change Window Title" HorizontalAlignment="Left" Margin="76,71,0,0" VerticalAlignment="Top" Width="146" Click="Text_Butt_Click"/>
+            <Button x:Name="change_content_butt" Content="Change Content" HorizontalAlignment="Left" Margin="76,137,0,0" VerticalAlignment="Top" Width="146" Click="change_content_butt_Click"  />
+            <Label x:Name="text_lbl" Content="----" HorizontalAlignment="Left" Margin="0,101,0,0" VerticalAlignment="Top" Width="92" Background="{x:Null}"/>
+            <TextBox x:Name="text_tbox" HorizontalAlignment="Left" Height="23" Margin="97,104,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="165"/>
+            <Button x:Name="change_window_color" Content="Change Window and Grid Color" HorizontalAlignment="Left" Margin="51,173,0,0" VerticalAlignment="Top" Width="196" Height="29" Click="change_window_color_Click"  />
+            <Button x:Name="change_ctls_color" Content="Change Controls Color" HorizontalAlignment="Left" Margin="51,212,0,0" VerticalAlignment="Top" Width="196" Height="29" Click="change_ctls_color_Click" Foreground="Black"    />
+            <Button x:Name="Change_text_color_butt" Content="Change Text Color" HorizontalAlignment="Left" Margin="76,254,0,0" VerticalAlignment="Top" Width="158" Height="27" Click="Change_text_color_butt_Click" Visibility="Visible"/>
+            <Button x:Name="b0" Content="1" HorizontalAlignment="Left" Height="25" Margin="0,376,0,-109" VerticalAlignment="Top" Width="27" Click="Button_Click"/>
+        </Grid>
+        <Button x:Name="Disable_enable_butt" Content="Disable" HorizontalAlignment="Left" Margin="366,50,0,0" VerticalAlignment="Top" Width="99" Click="Disable_enable_butt_Click"/>
+        <Button x:Name="Enable_butt" Content="Enable" HorizontalAlignment="Left" Margin="366,77,0,0" VerticalAlignment="Top" Width="99" Click="Enable_butt_Click"  />
+        <Button x:Name="hide_butt" Content="Hide" HorizontalAlignment="Left" Margin="366,142,0,0" VerticalAlignment="Top" Width="99" Click="hide_butt_Click"/>
+        <Button x:Name="show_butt" Content="Show" HorizontalAlignment="Left" Margin="366,176,0,0" VerticalAlignment="Top" Width="99" Click="show_butt_Click"/>
+        <Button x:Name="b1" Content="2" HorizontalAlignment="Left" Margin="61,417,0,-84" Width="27" Click="b1_Click"/>
+        <Button x:Name="b2" Content="3" HorizontalAlignment="Left" Margin="93,417,0,-84" Width="27" Click="b2_Click"/>
+        <Button x:Name="b3" Content="4" HorizontalAlignment="Left" Height="25" Margin="125,417,0,-84" VerticalAlignment="Top" Width="27" Click="b3_Click"/>
+        <Button x:Name="b3_Copy" Content="5" HorizontalAlignment="Left" Height="25" Margin="157,417,0,-84" VerticalAlignment="Top" Width="27" Click="b3_Copy_Click"  />
+
+    </Grid>
+</Window>

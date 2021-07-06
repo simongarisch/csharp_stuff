@@ -1,0 +1,23 @@
+﻿<Window x:Class="hello_wpf.CsCode.textbox_adv_topics"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hello_wpf.CsCode"
+        mc:Ignorable="d"
+        Title="TextBox Advance Topics" Height="398.335" Width="719.502" WindowStartupLocation="CenterScreen" Background="#FFECEAEA" ResizeMode="CanResizeWithGrip">
+    <Grid>
+        <TextBox x:Name="tbox_ctl" Margin="21,63,20,22" TextWrapping="Wrap" Text="&lt;Button x:Name=&quot;sel_all_butt&quot; Content=&quot;Select All&quot; HorizontalAlignment=&quot;Left&quot; &lt;Button x:Name=&quot;sel_all_butt&quot; Content=&quot;Select All&quot; HorizontalAlignment=&quot;Left&quot; &lt;Button x:Name=&quot;sel_all_butt&quot; Content=&quot;Select All&quot; HorizontalAlignment=&quot;Left&quot; " AcceptsReturn="True" VerticalScrollBarVisibility="Visible" FontSize="20"/>
+        <Button x:Name="zoom_in_butt" Content="Zoom +" HorizontalAlignment="Left" Margin="34,27,0,0" VerticalAlignment="Top" Width="57" Click="zoom_in_butt_Click"/>
+        <Button x:Name="zoom_out_butt" Content="Zoom -" HorizontalAlignment="Left" Margin="98,27,0,0" VerticalAlignment="Top" Width="57" Click="zoom_out_butt_Click"/>
+        <Button x:Name="sel_all_butt" Content="Select All" HorizontalAlignment="Left" Margin="171,27,0,0" VerticalAlignment="Top" Width="61" Click="sel_all_butt_Click"/>
+        <Button x:Name="undo_butt" Content="Undo" HorizontalAlignment="Left" Margin="246,28,0,0" VerticalAlignment="Top" Width="43" Click="undo_butt_Click"   />
+        <Button x:Name="redo_butt" Content="Redo" HorizontalAlignment="Left" Margin="294,28,0,0" VerticalAlignment="Top" Width="43" Click="redo_butt_Click" />
+        <Button x:Name="copy_butt" Content="Copy" HorizontalAlignment="Left" Margin="364,28,0,0" VerticalAlignment="Top" Width="43" Click="copy_butt_Click"/>
+        <Button x:Name="cut_butt" Content="Cut" HorizontalAlignment="Left" Margin="412,28,0,0" VerticalAlignment="Top" Width="43" Click="cut_butt_Click"/>
+        <Button x:Name="paste_butt" Content="Paste" HorizontalAlignment="Left" Margin="470,28,0,0" VerticalAlignment="Top" Width="43" Click="paste_butt_Click"/>
+        <Button x:Name="enable_wrap_butt" Content="Enable Word Warp" HorizontalAlignment="Left" Margin="554,10,0,0" VerticalAlignment="Top" Width="122" Click="enable_wrap_butt_Click"/>
+        <Button x:Name="disable_wrap_butt" Content="Disable Word Warp" HorizontalAlignment="Left" Margin="554,35,0,0" VerticalAlignment="Top" Width="122" Click="disable_wrap_butt_Click"/>
+
+    </Grid>
+</Window>

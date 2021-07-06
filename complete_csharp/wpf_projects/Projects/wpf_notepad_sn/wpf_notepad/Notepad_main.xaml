@@ -1,0 +1,59 @@
+﻿<Window x:Class="wpf_notepad.Notepad_main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf_notepad"
+        mc:Ignorable="d"
+        Title="WPF Notepad Application" Height="452.132" Width="623.605" Background="#FFF1F1F1" WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip" Icon="Images/About_us/notepad_128.png" >
+    <Grid>
+        <TextBox x:Name="tbox_ctl" Margin="10,42,7,10" TextWrapping="Wrap" Text="Hi,&#xD;&#xA;I'm the WPF Notepad with the C#!&#xD;&#xA;I'm Developed by Musavi as the final project!&#xD;&#xA;Regards,&#xD;&#xA;Musavi" VerticalScrollBarVisibility="Visible" AcceptsReturn="True" FontSize="15"/>
+        <Menu Height="37" VerticalAlignment="Top" Background="#FFE2DEDE">
+            <MenuItem Header="_File" Height="37" Width="72" Cursor="Hand" Padding="10,0,6,0">
+                <MenuItem.Icon>
+                    <Image Source="Images/Notepad/file_32.png" Margin="-4,-10,-6,-8"></Image>
+                </MenuItem.Icon>
+                <MenuItem x:Name="new_butt" Header="New" HorizontalAlignment="Left" Height="37" Width="140" Click="new_butt_Click"  >
+                    <MenuItem.Icon>
+                        <Image Source="Images/Notepad/edit_32.png" Margin="-4,-10,-6,-2"></Image>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem x:Name="open_butt" Header="Open" HorizontalAlignment="Left" Height="37" Width="140" Click="open_butt_Click"/>
+                <MenuItem x:Name="save_butt" Header="Save As" HorizontalAlignment="Left" Height="37" Width="140" Click="save_butt_Click"/>
+                <MenuItem x:Name="exit_butt" Header="Exit" HorizontalAlignment="Left" Height="37" Width="140" Click="exit_butt_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Edit" Height="37" Width="100" Cursor="Hand">
+                <MenuItem.Icon>
+                    <Image Source="Images/Notepad/edit_32.png" Margin="-4,-10,-6,-8"></Image>
+                </MenuItem.Icon>
+                <MenuItem x:Name="undo_butt" Header="Undo" HorizontalAlignment="Left" Height="37" Width="140" Click="undo_butt_Click"/>
+                <MenuItem x:Name="redo_butt" Header="Redo" HorizontalAlignment="Left" Height="37" Width="140" Click="redo_butt_Click"/>
+                <MenuItem x:Name="cut_butt" Header="Cut" HorizontalAlignment="Left" Height="37" Width="140" Click="cut_butt_Click"/>
+                <MenuItem x:Name="copy_butt" Header="Copy" HorizontalAlignment="Left" Height="37" Width="140" Click="copy_butt_Click"/>
+                <MenuItem x:Name="paste_butt" Header="Paste" HorizontalAlignment="Left" Height="37" Width="140" Click="paste_butt_Click"/>
+                <MenuItem x:Name="sel_all_butt" Header="Select All" HorizontalAlignment="Left" Height="37" Width="140" Click="sel_all_butt_Click"/>
+            </MenuItem>
+            <MenuItem Header="F_ormat" Height="37" Width="100" Cursor="Hand">
+                <MenuItem.Icon>
+                    <Image Source="Images/Notepad/format_32.png" Margin="-4,-10,-6,-8"></Image>
+                </MenuItem.Icon>
+                <MenuItem x:Name="word_wrap_butt" Header="Word Wrap" HorizontalAlignment="Left" Height="37" Width="150" IsCheckable="True" IsChecked="True" Click="word_wrap_butt_Click" />
+            </MenuItem>
+            <MenuItem Header="_View" Height="37" Width="100" Cursor="Hand">
+                <MenuItem.Icon>
+                    <Image Source="Images/Notepad/view_32.png" Margin="-4,-10,-6,-8"></Image>
+                </MenuItem.Icon>
+                <MenuItem x:Name="zoom_in_butt" Header="Zoom In +" HorizontalAlignment="Left" Height="37" Width="160" Click="zoom_in_butt_Click"/>
+                <MenuItem x:Name="zoom_out_butt" Header="Zoom Out -" HorizontalAlignment="Left" Height="37" Width="160" Click="zoom_out_butt_Click"/>
+                <MenuItem x:Name="default_zoom_butt" Header="Default Zoom" HorizontalAlignment="Left" Height="37" Width="160" Click="default_zoom_butt_Click"/>
+            </MenuItem>
+            <MenuItem Header="_Help" Height="37" Width="100" Cursor="Hand">
+                <MenuItem.Icon>
+                    <Image Source="Images/Notepad/help_32.png" Margin="-4,-10,-6,-8"></Image>
+                </MenuItem.Icon>
+                <MenuItem x:Name="about_butt" Header="About Us" HorizontalAlignment="Left" Height="37" Width="140" Click="about_butt_Click"/>
+            </MenuItem>
+        </Menu>
+
+    </Grid>
+</Window>

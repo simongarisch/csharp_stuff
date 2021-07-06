@@ -1,0 +1,22 @@
+﻿<Window x:Class="hello_wpf.CsCode.image_opf"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hello_wpf.CsCode"
+        mc:Ignorable="d"
+        Title="image_opf" Height="402.285" Width="459.875" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="66*"/>
+            <RowDefinition Height="305*"/>
+        </Grid.RowDefinitions>
+        <Image x:Name="image_ctl" Source="koala_resized.jpg" Grid.Row="1" Stretch="Fill"/>
+        <Button x:Name="load_image_butt" Content="Load Image" HorizontalAlignment="Left" Margin="94,4,0,0" VerticalAlignment="Top" Width="79" Height="29" Click="load_image_butt_Click"  />
+        <Button x:Name="fill_butt" Content="Fill" HorizontalAlignment="Left" Margin="238,4,0,0" VerticalAlignment="Top" Width="79" Height="29" Click="fill_butt_Click"   />
+        <Button x:Name="zoom_butt" Content="Zoom" HorizontalAlignment="Left" Margin="322,4,0,0" VerticalAlignment="Top" Width="79" Height="29" Click="zoom_butt_Click"    />
+        <Button x:Name="browse_butt" Content="Browse" HorizontalAlignment="Left" Margin="10,4,0,0" VerticalAlignment="Top" Width="79" Height="29" Click="browse_butt_Click"  />
+        <Label x:Name="file_name_lbl" Content="" Margin="10,38,6,0" VerticalAlignment="Top" Height="25" BorderBrush="#FF838383" BorderThickness="1" Background="#FFF3F3F3"/>
+
+    </Grid>
+</Window>
