@@ -140,6 +140,38 @@ class Batching : IExample {
     }
 }
 
+class ToDictionaryEx : IExample {
+    class MyClass {
+        public bool running;
+        public int x;
+
+        public MyClass(bool running, int x) {
+            this.running = running;
+            this.x = x;
+        }
+    }
+
+    public void Run() {
+        var items = new List<MyClass>() {
+            new MyClass(true, 1),
+            new MyClass(true, 2),
+            new MyClass(false, 3),
+            new MyClass(false, 4)
+        };
+
+        var dict = items.ToDictionary(item => item.x);
+        foreach(var entry in dict) {
+            Console.WriteLine(entry);
+        }
+        /*
+        [1, ToDictionaryEx+MyClass]
+        [2, ToDictionaryEx+MyClass]
+        [3, ToDictionaryEx+MyClass]
+        [4, ToDictionaryEx+MyClass]
+        */
+    }
+}
+
 class Program {
     public static void Main() {
         List<IExample> examples = new List<IExample>();
@@ -149,6 +181,7 @@ class Program {
         examples.Add(new SequenceDifferent());
         examples.Add(new UpperCaseWords());
         examples.Add(new Batching());
+        examples.Add(new ToDictionaryEx());
 
         foreach(IExample example in examples) {
             Console.WriteLine(example.GetType().Name);
