@@ -1,0 +1,39 @@
+﻿<Window x:Class="QuotesGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuotesGenerator"
+        mc:Ignorable="d"
+        Title="" Height="400" Width="300">
+
+    <DockPanel>
+        
+        <StackPanel DockPanel.Dock="Top" Orientation="Vertical" HorizontalAlignment="Center">
+            <Label
+                FontSize="20"
+                FontWeight="Bold"
+                Content="Quotes..."
+                Opacity="0.6"/>
+
+            <TextBlock
+                FontSize="15"
+                Padding="10"
+                Margin="10"
+                Width="250"
+                Height="200"
+                FontStyle="Italic"
+                TextWrapping="Wrap"
+                x:Name="QuoteText"/>
+        </StackPanel>
+
+        <Button DockPanel.Dock="Bottom"
+                Padding="10"
+                Margin="10"
+                MaxHeight="40"
+                Content="Next"
+                FontSize="12"
+                Click="GetNextQuote"/>
+
+    </DockPanel>
+</Window>
