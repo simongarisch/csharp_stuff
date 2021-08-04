@@ -9,7 +9,7 @@ namespace TTT
     {
         private bool _turnX = true;
         private bool _gameOver = false;
-        public string[,] _board = new string[3, 3];
+        private string[,] _board = new string[3, 3];
 
         public MainWindow()
         {
