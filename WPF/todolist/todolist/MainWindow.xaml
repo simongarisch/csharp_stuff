@@ -1,0 +1,41 @@
+﻿<Window x:Class="todolist.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:todolist"
+        mc:Ignorable="d"
+        Title="TODO List" Height="500" Width="800">
+
+    <StackPanel Orientation="Vertical" x:Name="TodoStack">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            
+            <TextBox Grid.Column="0"
+                     x:Name="NewItemText"
+                     Height="75"
+                     VerticalContentAlignment="Center"
+                     Padding="10"
+                     FontSize="25"
+                     />
+
+            <Button Grid.Column="1"
+                    Content="Add"
+                    VerticalAlignment="Center"
+                    Height="75"
+                    FontSize="25" Click="AddNewTodo"
+                    Background="AliceBlue"
+                    />
+        </Grid>
+
+        <local:SingleItem/>
+        <local:SingleItem/>
+        <local:SingleItem/>
+        <local:SingleItem/>
+        <local:SingleItem/>
+    </StackPanel>
+
+</Window>
